@@ -3,9 +3,9 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `Intro`;
+export const HERO_CONTENT = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Etiam pulvinar, orci nec bibendum fermentum, turpis purus facilisis dolor, nec faucibus lorem sem a magna. Integer at turpis quis nulla congue fermentum.`;
 
-export const ABOUT_TEXT = `About`;
+export const ABOUT_TEXT = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Etiam pulvinar, orci nec bibendum fermentum, turpis purus facilisis dolor, nec faucibus lorem sem a magna. Integer at turpis quis nulla congue fermentum.`;
 
 export const EXPERIENCES = [
   {
@@ -35,6 +35,54 @@ export const EXPERIENCES = [
     company: "Paypal",
     description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
     technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+  },
+];
+
+export const EDUCATION = [
+  {
+    institution: "Stanford University",
+    degree: "Bachelor of Science",
+    fieldOfStudy: "Computer Science",
+    graduationYear: "2020",
+    description:
+      "Focused on software engineering, data structures, and algorithms.",
+    courses: [
+      "Data Structures",
+      "Algorithms",
+      "Operating Systems",
+      "Database Systems",
+    ],
+    image: "src/assets/projects/project-1.jpg",
+  },
+  {
+    institution: "Harvard University",
+    degree: "Master of Science",
+    fieldOfStudy: "Artificial Intelligence",
+    graduationYear: "2022",
+    description:
+      "Specialized in machine learning, neural networks, and AI ethics.",
+    courses: [
+      "Machine Learning",
+      "Neural Networks",
+      "AI Ethics",
+      "Natural Language Processing",
+    ],
+    image: "src/assets/projects/project-1.jpg",
+  },
+  {
+    institution: "Harvard University",
+    degree: "Master of Science",
+    fieldOfStudy: "Artificial Intelligence",
+    graduationYear: "2022",
+    description:
+      "Specialized in machine learning, neural networks, and AI ethics.",
+    courses: [
+      "Machine Learning",
+      "Neural Networks",
+      "AI Ethics",
+      "Natural Language Processing",
+    ],
+    image: "src/assets/projects/project-1.jpg",
   },
 ];
 

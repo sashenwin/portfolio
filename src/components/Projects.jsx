@@ -1,28 +1,37 @@
-import { PROJECTS } from "../constants"
+import { PROJECTS } from "../constants";
 
 const Projects = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
-        <h2 className="my-20 text-center text-4xl">Projects</h2>
-        <div>{PROJECTS.map((project, index) => (
-            <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-                <div className="w-full lg:w-1/4">
-                <img src={project.image} width={150} height={150} alt={project.title} className="mb-6 rounded"/>
-                </div>
-                <div className="w-full max-w-xl lg:w-3/4">
-                <h6 className="mb-2 font-semibold">{project.title}</h6>
-                <p className="mb-4 text-neutral-400">{project.description}</p>
-                {project.technologies.map((tech, index) => (
-                    <span key={index} className="mr-2 rounded bg-neutral-900 text-purple-900 px-2 py-1 text-sm font-medium">
-                        {tech}
-                    </span>
-                ))}
-                </div>
+      <h2 className="my-20 text-center text-4xl">Projects</h2>
+      <div className="flex flex-wrap justify-center gap-6 px-4 py-3">
+        {PROJECTS.map((project, index) => (
+          <div
+            key={index}
+            className="max-w-sm rounded overflow-hidden shadow-lg bg-neutral-800"
+          >
+            <img className="w-full" src={project.image} alt={project.title} />
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2 text-white">
+                {project.title}
+              </div>
+              <p className="text-gray-400 text-base">{project.description}</p>
             </div>
+            <div className="px-6 py-4">
+              {project.technologies.map((tech, techIndex) => (
+                <span
+                  key={techIndex}
+                  className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
         ))}
-        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
