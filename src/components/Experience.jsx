@@ -12,7 +12,7 @@ const Experience = () => {
       </h2>
 
       <div className="relative lg:px-10">
-        <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-500 h-full"></div>
+        <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-200 h-full"></div>
 
         {EXPERIENCES.map((experience, index) => (
           <motion.div

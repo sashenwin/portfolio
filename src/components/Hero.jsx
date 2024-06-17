@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/hero.png";
+import profilePic from "../assets/heroimage.png";
 import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import CV from "../assets/CV.pdf";
@@ -37,7 +37,7 @@ const Hero = () => {
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
-            <h1 className="pb-6 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl text-sky-600">
+            <h1 className="pb-6 text-4xl font-medium tracking-tight lg:mt-16 lg:text-7xl text-sky-600">
               Sashen Windsor
             </h1>
             <motion.span

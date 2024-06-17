@@ -1,11 +1,16 @@
 import { FaGithub, FaGlobe } from 'react-icons/fa';
 import { PROJECTS } from '../constants';
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
     <div className="border-b border-gray-200 pb-4">
       <h2 className="my-20 text-center text-5xl font-semibold text-sky-700">Projects</h2>
-      <div className="flex flex-wrap justify-center gap-6 px-4 py-3">
+      <motion.div 
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 0.8 }}
+      className="flex flex-wrap justify-center gap-6 px-4 py-3">
         {PROJECTS.map((project, index) => (
           <div
             key={index}
@@ -54,7 +59,7 @@ const Projects = () => {
             </div>
           </div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

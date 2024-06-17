@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/personalLogo.png";
+import logo from "../assets/personalLogos.png";
 import { Link as ScrollLink } from "react-scroll";
 import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
@@ -9,30 +9,20 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 px-8 flex items-center justify-between">
-      <div className="flex items-center ml-20">
-      <ScrollLink to="hero" smooth={true} duration={500}>
-        <img className="w-10 h-auto cursor-pointer" src={logo} alt="logo" />
-      </ScrollLink>
-    </div>
+      <div className="flex items-center lg:ml-20">
+        <ScrollLink to="hero" smooth={true} duration={500}>
+          <img className="w-10 h-auto cursor-pointer" src={logo} alt="logo" />
+        </ScrollLink>
+      </div>
 
       <div className="hidden lg:flex items-center gap-10 text-l mr-20 text-gray-600 font-medium">
-        {/* <ScrollLink
-          to="about"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={-70}
-          className="cursor-pointer"
-        >
-          About
-        </ScrollLink> */}
         <ScrollLink
           to="experience"
           spy={true}
           smooth={true}
           duration={500}
           offset={-70}
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-sky-600"
         >
           Experience
         </ScrollLink>
@@ -42,18 +32,17 @@ const Navbar = () => {
           smooth={true}
           duration={500}
           offset={-70}
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-sky-600"
         >
           Education
         </ScrollLink>
-        
         <ScrollLink
           to="technologies"
           spy={true}
           smooth={true}
           duration={500}
           offset={-70}
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-sky-600"
         >
           Technologies
         </ScrollLink>
@@ -63,7 +52,7 @@ const Navbar = () => {
           smooth={true}
           duration={500}
           offset={-70}
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-sky-600"
         >
           Projects
         </ScrollLink>
@@ -73,7 +62,7 @@ const Navbar = () => {
           smooth={true}
           duration={500}
           offset={-70}
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-sky-600"
         >
           Contact
         </ScrollLink>
@@ -87,10 +76,16 @@ const Navbar = () => {
           <a href="https://github.com/sashenwin" className="cursor-pointer">
             <FaGithub />
           </a>
-          <a href="https://www.facebook.com/SashenWindsor/" className="cursor-pointer">
+          <a
+            href="https://www.facebook.com/SashenWindsor/"
+            className="cursor-pointer"
+          >
             <FaFacebook />
           </a>
-          <a href="https://www.instagram.com/sashe.n/" className="cursor-pointer">
+          <a
+            href="https://www.instagram.com/sashe.n/"
+            className="cursor-pointer"
+          >
             <FaInstagram />
           </a>
         </div>
@@ -111,7 +106,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             offset={-70}
-            className="cursor-pointer mb-4 text-xl"
+            className="cursor-pointer mb-4 text-xl hover:text-sky-600 hover:underline"
             onClick={() => setShowMenu(false)}
           >
             About
@@ -122,7 +117,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             offset={-70}
-            className="cursor-pointer mb-4 text-xl"
+            className="cursor-pointer mb-4 text-xl hover:text-sky-600 hover:underline"
             onClick={() => setShowMenu(false)}
           >
             Education
@@ -133,7 +128,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             offset={-70}
-            className="cursor-pointer mb-4 text-xl"
+            className="cursor-pointer mb-4 text-xl hover:text-sky-600 hover:underline"
             onClick={() => setShowMenu(false)}
           >
             Experience
@@ -144,7 +139,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             offset={-70}
-            className="cursor-pointer mb-4 text-xl"
+            className="cursor-pointer mb-4 text-xl hover:text-sky-600 hover:underline"
             onClick={() => setShowMenu(false)}
           >
             Technologies
@@ -155,7 +150,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             offset={-70}
-            className="cursor-pointer mb-4 text-xl"
+            className="cursor-pointer mb-4 text-xl hover:text-sky-600 hover:underline"
             onClick={() => setShowMenu(false)}
           >
             Projects
@@ -166,7 +161,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             offset={-70}
-            className="cursor-pointer mb-4 text-xl"
+            className="cursor-pointer mb-4 text-xl hover:text-sky-600 hover:underline"
             onClick={() => setShowMenu(false)}
           >
             Contact
