@@ -8,13 +8,15 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-10 shadow-md py-4 px-8 flex items-center justify-between">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-4 px-8 flex items-center justify-between">
       <div className="flex items-center ml-20">
-        <img className="w-10 h-auto" src={logo} alt="logo" />
-      </div>
+      <ScrollLink to="hero" smooth={true} duration={500}>
+        <img className="w-10 h-auto cursor-pointer" src={logo} alt="logo" />
+      </ScrollLink>
+    </div>
 
-      <div className="hidden lg:flex items-center gap-10 text-l mr-20">
-        <ScrollLink
+      <div className="hidden lg:flex items-center gap-10 text-l mr-20 text-gray-600 font-medium">
+        {/* <ScrollLink
           to="about"
           spy={true}
           smooth={true}
@@ -23,6 +25,16 @@ const Navbar = () => {
           className="cursor-pointer"
         >
           About
+        </ScrollLink> */}
+        <ScrollLink
+          to="experience"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-70}
+          className="cursor-pointer"
+        >
+          Experience
         </ScrollLink>
         <ScrollLink
           to="education"
@@ -34,16 +46,7 @@ const Navbar = () => {
         >
           Education
         </ScrollLink>
-        <ScrollLink
-          to="experience"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={-70}
-          className="cursor-pointer"
-        >
-          Experience
-        </ScrollLink>
+        
         <ScrollLink
           to="technologies"
           spy={true}
@@ -81,13 +84,13 @@ const Navbar = () => {
           >
             <FaLinkedin />
           </a>
-          <a href="https://github.com/example" className="cursor-pointer">
+          <a href="https://github.com/sashenwin" className="cursor-pointer">
             <FaGithub />
           </a>
-          <a href="https://facebook.com/example" className="cursor-pointer">
+          <a href="https://www.facebook.com/SashenWindsor/" className="cursor-pointer">
             <FaFacebook />
           </a>
-          <a href="https://instagram.com/example" className="cursor-pointer">
+          <a href="https://www.instagram.com/sashe.n/" className="cursor-pointer">
             <FaInstagram />
           </a>
         </div>
@@ -101,7 +104,7 @@ const Navbar = () => {
       </div>
 
       {showMenu && (
-        <div className="lg:hidden absolute top-16 left-0 right-0 bg-white bg-opacity-10 shadow-md py-4 px-8 flex flex-col items-center">
+        <div className="lg:hidden absolute top-16 left-0 right-0 bg-white text-gray-700 shadow-md py-4 px-8 flex flex-col items-center">
           <ScrollLink
             to="about"
             spy={true}

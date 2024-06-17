@@ -1,16 +1,8 @@
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/profilePicture.png";
-import { motion } from "framer-motion";
+import profilePic from "../assets/hero.png";
+import { useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import CV from "../assets/CV.pdf";
-
-const container = (delay) => ({
-  hidden: { x: -100, opacity: 0 },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 0.5, delay: delay },
-  },
-});
 
 const onButtonClick = () => {
   fetch(CV).then((response) => {
@@ -25,57 +17,50 @@ const onButtonClick = () => {
   });
 };
 
-
-
 const Hero = () => {
+  const roles = ["Developer", "UI/UX Designer", "Project Manager", "Compere"];
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    const interval = setInterval(async () => {
+      await controls.start({ opacity: 0 });
+      setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
+      await controls.start({ opacity: 1 });
+    }, 1800);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+    <div className="border-b border-gray-200 pb-24 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
-            <motion.h1
-              variants={container(0)}
-              initial="hidden"
-              animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
-            >
+            <h1 className="pb-6 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl text-sky-600">
               Sashen Windsor
-            </motion.h1>
+            </h1>
             <motion.span
-              variants={container(0.5)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-pink-300 via via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
+              initial={{ opacity: 0 }}
+              animate={controls}
+              className="bg-gradient-to-r from-teal-500 via-blue-800 to-sky-700 bg-clip-text text-4xl tracking-tight text-transparent"
             >
-              Developer
+              {roles[currentRoleIndex]}
             </motion.span>
-            <motion.p
-              variants={container(1)}
-              initial="hidden"
-              animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
-            >
+            <p className="my-2 max-w-xl py-6 font-light tracking-tighter text-gray-700">
               {HERO_CONTENT}
-            </motion.p>
+            </p>
             <button
-              className="flex items-center text-indigo-700 border border-indigo-600 py-2 px-6 gap-2 rounded inline-flex items-center"
-              onClick={onButtonClick}
-            >
-              Download CV
-            </button>
+  className="flex items-center text-sky-700 border border-sky-600 py-2 px-6 gap-2 rounded inline-flex items-center hover:bg-sky-600 hover:border-sky-600 hover:text-white transition-colors duration-300"
+  onClick={onButtonClick}
+>
+  Download CV
+</button>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
+        <div className="w-full lg:w-1/3 lg:ml-24">
           <div className="flex justify-center">
-            <motion.img
-              whileHover={{
-                scale: 1.1,
-                translateY: -10,
-                transition: { duration: 0.3 },
-              }}
-              src={profilePic}
-              alt="Sashen Windsor"
-            />
+            <img src={profilePic} alt="Sashen Windsor" />
           </div>
         </div>
       </div>

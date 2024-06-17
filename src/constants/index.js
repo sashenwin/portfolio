@@ -1,124 +1,140 @@
-import project1 from "../assets/projects/project-1.jpg";
+import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import usj from "../assets/usj.jpg";
+import cima from "../assets/cima.jpg";
+import ananda from "../assets/ananda.jpg";
+import mahinda from "../assets/mahinda.jpg";
 
-export const HERO_CONTENT = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Etiam pulvinar, orci nec bibendum fermentum, turpis purus facilisis dolor, nec faucibus lorem sem a magna. Integer at turpis quis nulla congue fermentum.`;
+export const HERO_CONTENT = `Passionate and ambitious computer science undergraduate with a relentless drive to learn and excel in the ever-evolving world of technology. Eager to embrace new opportunities and collaborate with diverse individuals, I am committed to expanding my knowledge and skills to make a meaningful impact in the field.`;
 
 export const ABOUT_TEXT = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Etiam pulvinar, orci nec bibendum fermentum, turpis purus facilisis dolor, nec faucibus lorem sem a magna. Integer at turpis quis nulla congue fermentum.`;
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    year: "Jul 2023 - Apr 2024",
+    role: "Software Engineer Trainee",
+    company: "EchonLabs",
+    description: `Contributed as a developer to an internal project aimed at revamping the company’s website. This role significantly enhanced my programming skills, particularly in Angular framework, SCSS, TypeScript, Node.js, and HTML. I applied creative thinking to effectively implement these technologies, bringing complex functionalities to life on the website.`,
+    skills: ["Front-end Development", "Angular", "SCSS", "Creative Problem Solving","Version Control","Typescript"],
   },
   {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
+    year: "May 2023 - Jul 2023",
+    role: "Project Manager/ Business Analyst Trainee",
+    company: "EchonLabs",
+    description: `Participated in client meetings to gather and elicit requirements, which were subsequently documented into Software Requirements Specifications (SRS) and user stories. Additionally, I authored a detailed product brochure showcasing the company’s offerings. I took charge of facilitating standup meetings and managing projects, including backlog grooming and overseeing project lifecycles.`,
+    skills: ["Requirement Gathering", "Documentation", "Project Management", "Agile", "Collaboration"],
   },
   {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    year: "May 2021 - Jun 2022",
+    role: "Assistant Operations Manager",
+    company: "TYR Logistics",
+    description: `Oversaw and coordinated logistics across multiple regions, managing partner and vendor relationships effectively. Communicated with diverse teams across various sectors and nationalities to ensure smooth operations. Compiled and maintained detailed daily logs and comprehensive monthly narrative reports, ensuring accuracy and consistency in operational processes.`,
+    skills: ["Project Management", "Interpersonal Skills", "Problem-Solving", "Logistics Coordination"],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "Oct 2020 - Apr 2021",
+    role: "Intern",
+    company: "Hatton National Bank PLC",
+    description: `Managed daily bank operations, including account openings, fixed deposits, and customer service. Oversaw financial transactions and customer accounts, monitored overdue loans, contacted clients for collections, promoted bank services, and assisted with credit card applications.`,
+    skills: ["Risk Management", "Banking Operations", "Time Management"],
   },
 ];
 
 export const EDUCATION = [
   {
-    institution: "Stanford University",
+    institution: "University Of Sri Jayewardenepura",
     degree: "Bachelor of Science",
-    fieldOfStudy: "Computer Science",
-    graduationYear: "2020",
+    fieldOfStudy: "in Computer Science",
+    graduationYear: "Jun 2021 - Present",
     description:
-      "Focused on software engineering, data structures, and algorithms.",
+      "Studied Computer Science, Mathematics and Statistics in the first two academic years and chose to major in Computer Science.",
     courses: [
       "Data Structures",
       "Algorithms",
       "Operating Systems",
       "Database Systems",
     ],
-    image: "src/assets/projects/project-1.jpg",
+    image: usj,
   },
   {
-    institution: "Harvard University",
-    degree: "Master of Science",
-    fieldOfStudy: "Artificial Intelligence",
-    graduationYear: "2022",
+    institution: "CIMA",
+    degree: "Accounting and Business Management",
+    graduationYear: "2020",
     description:
-      "Specialized in machine learning, neural networks, and AI ethics.",
+      "Passed all exams in the certificate level and received the CIMA Certficate in Business Accounting (CIMA Cert BA) in 2020",
     courses: [
       "Machine Learning",
       "Neural Networks",
       "AI Ethics",
       "Natural Language Processing",
     ],
-    image: "src/assets/projects/project-1.jpg",
+    image: cima,
   },
   {
-    institution: "Harvard University",
-    degree: "Master of Science",
-    fieldOfStudy: "Artificial Intelligence",
-    graduationYear: "2022",
+    institution: "Ananda College, Colombo 10",
+    degree: "Physical Science",
+    fieldOfStudy: "",
+    graduationYear: "2014-2019",
     description:
-      "Specialized in machine learning, neural networks, and AI ethics.",
+      "Received 9As in GCE O/Ls in 2016 and 1A 1B 1C in GCE O/Ls in 2019",
     courses: [
       "Machine Learning",
       "Neural Networks",
       "AI Ethics",
       "Natural Language Processing",
     ],
-    image: "src/assets/projects/project-1.jpg",
+    image: ananda,
+  },
+  {
+    institution: "Mahinda College, Galle",
+    degree: "Primary - Secondary",
+    fieldOfStudy: "",
+    graduationYear: "2006 - 2013",
+    description:
+      "Received my primary education and my secondary education upto grade 9 here.",
+    courses: [
+      "Machine Learning",
+      "Neural Networks",
+      "AI Ethics",
+      "Natural Language Processing",
+    ],
+    image: mahinda,
   },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "BitHive",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A tech-focused social media platform offering a welcoming environment for sharing stories, updates, and insights. Easily join and personalize your profile, explore curated tech feeds, discover trending content, connect with peers, manage saved posts, and create/edit content with a user-friendly interface.",
+    technologies: ["React.js", "Tailwind CSS", "Appwrite", "shadcn"],
+    githubLink: "https://github.com/sashenwin/BitHive",
   },
   {
-    title: "Task Management App",
+    title: "Personal Portfolio",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "Developed a personal portfolio project using React.js and Tailwind CSS, hosted on Firebase. This project showcases my skills and projects in a clean and modern layout, leveraging responsive design principles for optimal viewing across devices. Utilizing Firebase for hosting ensures seamless deployment and reliability, providing a user-friendly experience to visitors exploring my portfolio",
+    technologies: ["React.js", "Tailwind CSS", "Firebase"],
+    githubLink: "https://github.com/sashenwin/portfolio",
+    demoLink: "https://github.com/sashenwin/portfolio",
   },
   {
-    title: "Portfolio Website",
+    title: "Wallet Buddy",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "Developed a personal finance management system using C, where users can create accounts to track their incomes and expenses. The system allows users to add, edit, update, and delete expenses, providing comprehensive control over financial data. It includes various visualizations to display income and expense trends, offering insights on a monthly or yearly basis",
+    technologies: ["C"],
+    githubLink: "https://github.com/sashenwin/wallet-buddy",
   },
   {
-    title: "Blogging Platform",
+    title: "RoboDrape",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+      "Robodrape, an innovative automated drape system using Arduino technology and various sensors. The system intelligently adjusts drapes based on sunlight intensity—opening them during low-light conditions to let natural light in and closing them when sunlight is abundant to maintain a comfortable indoor environment. This automation not only enhances energy efficiency but also offers a convenient, hands-free solution for managing natural lighting in any space.",
+    technologies: ["Arduino"],
   },
 ];
-
-export const CONTACT = {
-  address: "Colombo 05, Sri Lanka",
-  phoneNo: "+94 768430168",
-  email: "sashenwindsor@gmail.com",
-};

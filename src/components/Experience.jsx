@@ -1,20 +1,18 @@
 import { EXPERIENCES } from "../constants";
+import { FiCodesandbox } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <div className="border-b border-neutral-900 pb-12">
-      <motion.h2
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+    <div className="border-b border-gray-200 pb-40 lg:mb-35">
+      <h2
+        className="mb-20 text-center text-5xl font-semibold text-sky-700"
       >
         Experience
-      </motion.h2>
+      </h2>
 
       <div className="relative lg:px-10">
-        <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-neutral-700 h-full"></div>
+        <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-0.5 bg-gray-500 h-full"></div>
 
         {EXPERIENCES.map((experience, index) => (
           <motion.div
@@ -31,9 +29,9 @@ const Experience = () => {
                 index % 2 === 0 ? "right-1/2" : "left-1/2"
               } transform ${
                 index % 2 === 0 ? "translate-x-1/2" : "-translate-x-1/2"
-              } lg:w-8 lg:h-8 lg:rounded-full lg:bg-purple-600 lg:top-1/2 lg:-mt-4 items-center justify-center shadow-xl`}
+              } lg:w-8 lg:h-8 lg:rounded-full lg:bg-sky-600 lg:top-1/2 lg:-mt-4 items-center justify-center shadow-xl`}
             >
-              <h1 className="text-white text-lg font-semibold">{index + 1}</h1>
+              <h1 className="text-white text-lg font-semibold"><FiCodesandbox /></h1>
             </div>
 
             <div
@@ -41,24 +39,24 @@ const Experience = () => {
                 index % 2 === 0 ? "lg:ml-12 lg:order-2" : "lg:order-1"
               } items-center justify-center`}
             >
-              <div className="relative max-w-sm w-full rounded-lg shadow-lg bg-neutral-800 p-6">
-                <p className="text-sm text-neutral-400 mb-2">
+              <div className="relative max-w-sm w-full rounded-lg shadow-lg bg-gray-200 p-6">
+                <p className="text-sm text-gray-700 mb-2">
                   {experience.year}
                 </p>
-                <h6 className="font-semibold text-xl text-white mb-2">
+                <h6 className="font-semibold text-xl text-sky-600 mb-2">
                   {experience.role}
                 </h6>
-                <span className="text-purple-100 text-sm">
+                <span className="text-sky-700 text-m font-bold">
                   {experience.company}
                 </span>
-                <p className="mt-2 text-neutral-400">
+                <p className="mt-2 text-gray-500">
                   {experience.description}
                 </p>
                 <div className="mt-4 flex flex-wrap">
-                  {experience.technologies.map((tech, techIndex) => (
+                  {experience.skills.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="mr-2 mt-2 rounded bg-neutral-700 px-2 py-1 text-sm font-medium text-purple-500"
+                      className="mr-2 mt-2 rounded bg-gray-700 px-2 py-1 text-sm font-medium text-sky-400"
                     >
                       {tech}
                     </span>

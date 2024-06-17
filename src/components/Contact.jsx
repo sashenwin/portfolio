@@ -37,13 +37,13 @@ const Contact = () => {
   };
 
   return (
-    <section className="body-font relative text-gray-400">
-      <div className="container mx-auto px-5 py-24">
+    <section className="body-font relative border-gray-200 border-b border-gray-200 pb-40 lg:mb-35">
+      <div className="container mx-auto px-5">
         <div className="mb-12 flex w-full flex-col text-center">
-          <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">
-            Contact Us
+          <h1 className="my-20 text-center text-5xl font-semibold text-sky-700">
+            Get in Touch
           </h1>
-          <p className="mx-auto text-base leading-relaxed lg:w-2/3">
+          <p className="mx-auto text-base leading-relaxed lg:w-2/3 text-gray-500">
             Feel free to reach out to me! Whether you have a question, feedback,
             or a collaboration proposal, I&apos;d love to hear from you.
           </p>
@@ -59,12 +59,12 @@ const Contact = () => {
                     id="name"
                     name="name"
                     required
-                    className="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                    className="peer w-full rounded border border-gray-600 bg-gray-200 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-sky-500 focus:bg-gray-800 focus:ring-2 focus:ring-sky-900"
                     placeholder="Name"
                   />
                   <label
                     htmlFor="name"
-                    className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
+                    className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-sky-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 font-medium peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-sky-500"
                   >
                     Name
                   </label>
@@ -77,12 +77,12 @@ const Contact = () => {
                     id="email"
                     name="email"
                     required
-                    className="peer w-full rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                    className="peer w-full rounded border border-gray-600 bg-gray-200 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-sky-500 focus:bg-gray-800 focus:ring-2 focus:ring-sky-900"
                     placeholder="Email"
                   />
                   <label
                     htmlFor="email"
-                    className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
+                    className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-sky-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 font-medium peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-sky-500"
                   >
                     Email
                   </label>
@@ -94,12 +94,12 @@ const Contact = () => {
                     id="message"
                     name="message"
                     required
-                    className="peer h-32 w-full resize-none rounded border border-gray-700 bg-gray-800 bg-opacity-40 py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900"
+                    className="peer w-full rounded border border-gray-600 bg-gray-200 bg-opacity-40 py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-sky-500 focus:bg-gray-800 focus:ring-2 focus:ring-sky-900"
                     placeholder="Message"
                   ></textarea>
                   <label
                     htmlFor="message"
-                    className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:bg-gray-900 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
+                    className="absolute left-3 -top-6 bg-transparent text-sm leading-7 text-sky-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 font-medium peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-sky-500"
                   >
                     Message
                   </label>
@@ -108,7 +108,7 @@ const Contact = () => {
               <div className="w-full p-2">
                 <button
                   type="submit"
-                  className="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none"
+                  className="mx-auto flex rounded border-0 bg-sky-600 py-2 px-8 text-lg text-white hover:bg-sky-700 focus:outline-none"
                 >
                   Send Message
                 </button>
@@ -121,13 +121,13 @@ const Contact = () => {
             </div>
           </form>
 
-          <div className="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
-            <a className="text-indigo-400">work.sashen@mail.com</a>
-            <p className="my-5 leading-normal">
+          <div className="mt-8 w-full border-t border-gray-200 p-2 pt-8 text-center">
+            <a className="text-sky-500">work.sashen@gmail.com</a>
+            <p className="my-5 leading-normal text-gray-500">
               Colombo 05 <br />
               Sri Lanka
             </p>
-            <span className="inline-flex space-x-2">
+            <span className="inline-flex space-x-2 text-gray-700">
               <FaLinkedin />
               <FaGithub />
               <FaFacebook />
