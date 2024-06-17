@@ -43,7 +43,7 @@ const Hero = () => {
             <motion.span
               initial={{ opacity: 0 }}
               animate={controls}
-              className="bg-gradient-to-r from-teal-500 via-blue-800 to-sky-700 bg-clip-text text-4xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-sky-400 via-sky-600 to-sky-800 bg-clip-text text-4xl tracking-tight text-transparent"
             >
               {roles[currentRoleIndex]}
             </motion.span>
