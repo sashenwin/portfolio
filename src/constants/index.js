@@ -76,7 +76,7 @@ export const EDUCATION = [
     institution: "Ananda College, Colombo 10",
     degree: "Physical Science",
     fieldOfStudy: "",
-    graduationYear: "2014-2019",
+    graduationYear: "2014 - 2019",
     description:
       "Received 9As in GCE O/Ls in 2016 and 1A 1B 1C in GCE A/Ls in 2019",
     courses: [
