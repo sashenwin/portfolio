@@ -30,7 +30,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       aria-label="GitHub link"
                     >
-                      <FaGithub className="text-gray-600 hover:text-gray-200 cursor-pointer" />
+                      <FaGithub className="text-gray-600 hover:text-gray-400 cursor-pointer" />
                     </a>
                   )}
                   {project.demoLink && (
@@ -40,7 +40,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       aria-label="Demo link"
                     >
-                      <FaGlobe className="text-gray-600 hover:text-gray-200 cursor-pointer" />
+                      <FaGlobe className="text-gray-600 hover:text-gray-400 cursor-pointer" />
                     </a>
                   )}
                 </div>
