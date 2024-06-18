@@ -118,9 +118,9 @@ export const PROJECTS = [
     image: project2,
     description:
       "Developed a personal portfolio project using React.js and Tailwind CSS, hosted on Firebase. This project showcases my skills and projects in a clean and modern layout, leveraging responsive design principles for optimal viewing across devices. Utilizing Firebase for hosting ensures seamless deployment and reliability, providing a user-friendly experience to visitors exploring my portfolio",
-    technologies: ["React.js", "Tailwind CSS", "Firebase"],
+    technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
     githubLink: "https://github.com/sashenwin/portfolio",
-    demoLink: "https://github.com/sashenwin/portfolio",
+    demoLink: "https://sashenwin.github.io/portfolio/",
   },
   {
     title: "Wallet Buddy",
