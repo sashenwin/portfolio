@@ -18,7 +18,7 @@ const onButtonClick = () => {
 };
 
 const Hero = () => {
-  const roles = ["Developer", "UI/UX Designer", "Project Manager", "Compere"];
+  const roles = ["Developer", "Ideator","UI/UX Designer", "Project Manager", "Compere", "Strategic Thinker"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const controls = useAnimation();
 
