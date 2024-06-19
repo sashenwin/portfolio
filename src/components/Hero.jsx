@@ -2,7 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/heroimage.png";
 import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import CV from "../assets/CV.pdf";
+import CV from "../assets/CVs.pdf";
 
 const onButtonClick = () => {
   fetch(CV).then((response) => {
