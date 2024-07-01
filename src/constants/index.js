@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
 import usj from "../assets/usj.jpg";
 import cima from "../assets/cima.jpg";
 import ananda from "../assets/ananda.jpg";
@@ -112,6 +113,14 @@ export const PROJECTS = [
       "A tech-focused social media platform offering a welcoming environment for sharing stories, updates, and insights. Easily join and personalize your profile, explore curated tech feeds, discover trending content, connect with peers, manage saved posts, and create/edit content with a user-friendly interface.",
     technologies: ["React.js", "Tailwind CSS", "Appwrite", "shadcn"],
     githubLink: "https://github.com/sashenwin/BitHive",
+  },
+  {
+    title: "MedPortal",
+    image: project5,
+    description:
+      "MedPortal is a user-friendly Java Swing application designed to streamline the management of patients and medical tests in a healthcare setting. The system offers an intuitive graphical user interface (GUI) that allows users to efficiently manage patient records, administer medical tests, and track results of the tests.",
+    technologies: ["Java", "Swing", "MySQL", "JDBC"],
+    githubLink: "https://github.com/sashenwin/MedPortal",
   },
   {
     title: "Personal Portfolio",

@@ -2,7 +2,7 @@ import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/heroimage.png";
 import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import CV from "../assets/CVs.pdf";
+import CV from "../assets/SASHEN_WINDSOR.pdf";
 
 const onButtonClick = () => {
   fetch(CV).then((response) => {
@@ -54,7 +54,7 @@ const Hero = () => {
   className="flex items-center text-sky-700 border border-sky-600 py-2 px-6 gap-2 rounded inline-flex items-center hover:bg-sky-600 hover:border-sky-600 hover:text-white transition-colors duration-300"
   onClick={onButtonClick}
 >
-  Download CV
+  Download Resume
 </button>
           </div>
         </div>
