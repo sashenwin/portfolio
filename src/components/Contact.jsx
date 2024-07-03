@@ -128,10 +128,27 @@ const Contact = () => {
               Sri Lanka
             </p>
             <span className="inline-flex space-x-2 text-gray-700">
-              <FaLinkedin />
-              <FaGithub />
-              <FaFacebook />
-              <FaInstagram />
+            <a
+            href="https://www.linkedin.com/in/sashenw/"
+            className="cursor-pointer"
+          >
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/sashenwin" className="cursor-pointer">
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.facebook.com/SashenWindsor/"
+            className="cursor-pointer"
+          >
+            <FaFacebook />
+          </a>
+          <a
+            href="https://www.instagram.com/sashe.n/"
+            className="cursor-pointer"
+          >
+            <FaInstagram />
+          </a>
             </span>
           </div>
         </div>
