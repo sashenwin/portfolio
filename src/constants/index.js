@@ -3,6 +3,7 @@ import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 import project5 from "../assets/projects/project-5.png";
+import project6 from "../assets/projects/project-6.png";
 import usj from "../assets/usj.jpg";
 import cima from "../assets/cima.jpg";
 import ananda from "../assets/ananda.jpg";
