@@ -108,6 +108,14 @@ export const EDUCATION = [
 
 export const PROJECTS = [
   {
+    title: "Sparky",
+    image: project6,
+    description:
+      "A tech-focused social media platform offering a welcoming environment for sharing stories, updates, and insights. Easily join and personalize your profile, explore curated tech feeds, discover trending content, connect with peers, manage saved posts, and create/edit content with a user-friendly interface.",
+    technologies: ["Raspberry Pi", "Python", "Google Gemini", "Google TTS", "Google Speech"],
+    githubLink: "https://github.com/sashenwin/Sparky",
+  },
+  {
     title: "BitHive",
     image: project1,
     description:
@@ -147,4 +155,5 @@ export const PROJECTS = [
       "Robodrape, an innovative automated drape system using Arduino technology and various sensors. The system intelligently adjusts drapes based on sunlight intensity—opening them during low-light conditions to let natural light in and closing them when sunlight is abundant to maintain a comfortable indoor environment. This automation not only enhances energy efficiency but also offers a convenient, hands-free solution for managing natural lighting in any space.",
     technologies: ["Arduino"],
   },
+  
 ];
