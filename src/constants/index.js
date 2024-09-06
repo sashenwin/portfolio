@@ -111,7 +111,7 @@ export const PROJECTS = [
     title: "Sparky",
     image: project6,
     description:
-      "A tech-focused social media platform offering a welcoming environment for sharing stories, updates, and insights. Easily join and personalize your profile, explore curated tech feeds, discover trending content, connect with peers, manage saved posts, and create/edit content with a user-friendly interface.",
+      "Sparky is an interactive storyteller robot designed to engage children with personalized stories. It creates immersive tales based on the child’s preferences and offers choices throughout the narrative, allowing kids to shape the direction of the story. Perfect for families with busy parents, Sparky provides a delightful alternative to passive screen time, encouraging creativity and imagination.",
     technologies: ["Raspberry Pi", "Python", "Google Gemini", "Google TTS", "Google Speech"],
     githubLink: "https://github.com/sashenwin/Sparky",
   },
