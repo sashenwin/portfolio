@@ -2,20 +2,6 @@ import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/heroimage.png";
 import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import CV from "../assets/SASHEN_WINDSOR.pdf";
-
-const onButtonClick = () => {
-  fetch(CV).then((response) => {
-    response.blob().then((blob) => {
-      const fileURL = window.URL.createObjectURL(blob);
-
-      let alink = document.createElement("a");
-      alink.href = fileURL;
-      alink.download = "SASHEN_WINDSOR.pdf";
-      alink.click();
-    });
-  });
-};
 
 const Hero = () => {
   const roles = ["Developer", "Ideator","UI/UX Designer", "Compère", "Strategic Thinker"];
@@ -50,12 +36,6 @@ const Hero = () => {
             <p className="my-2 max-w-xl py-6 font-light tracking-tighter text-gray-700">
               {HERO_CONTENT}
             </p>
-            <button
-  className="flex items-center text-sky-700 border border-sky-600 py-2 px-6 gap-2 rounded inline-flex items-center hover:bg-sky-600 hover:border-sky-600 hover:text-white transition-colors duration-300"
-  onClick={onButtonClick}
->
-  Download Resume
-</button>
           </div>
         </div>
         <div className="w-full lg:w-1/3 lg:ml-24">
